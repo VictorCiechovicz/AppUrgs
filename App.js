@@ -1,3 +1,4 @@
+import React from 'react'
 import { SafeAreaView, StatusBar, View } from 'react-native'
 import {
   useFonts,
@@ -10,7 +11,7 @@ import Cesta from './src/Pages/Cesta'
 export default function App() {
   const [fonteCarregada] = useFonts({
     MontserratRegular: Montserrat_400Regular,
-    MontserraBold: Montserrat_700Bold
+    MontserratBold: Montserrat_700Bold
   })
 
   if (!fonteCarregada) {
