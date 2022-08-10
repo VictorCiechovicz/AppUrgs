@@ -1,50 +1,25 @@
-import { StyleSheet, Text, View, Image } from 'react-native'
+import { SafeAreaView, StatusBar, View } from 'react-native'
+import {
+  useFonts,
+  Montserrat_400Regular,
+  Montserrat_700Bold
+} from '@expo-google-fonts/montserrat'
 
-import imageTopo from './assets/topo.png'
-import logoSmall from './assets/logo.png'
+import Cesta from './src/Pages/Cesta'
 
 export default function App() {
+  const [fonteCarregada] = useFonts({
+    MontserratRegular: Montserrat_400Regular,
+    MontserraBold: Montserrat_700Bold
+  })
+
+  if (!fonteCarregada) {
+    return <View />
+  }
   return (
-    <View style={styles.container}>
-      <Image source={imageTopo} style={styles.imageTopo} />
-
-      <Text style={styles.tituloInicial}>Cesta Verduras</Text>
-
-      <View style={styles.containerInicial}>
-        <Image source={logoSmall} style={styles.logo} />
-        <Text style={styles.textoContainerInicial}>Jenny Jack Farm</Text>
-      </View>
-    </View>
+    <SafeAreaView>
+      <StatusBar />
+      <Cesta />
+    </SafeAreaView>
   )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: '#fff'
-  },
-
-  imageTopo: {
-    width: 420,
-    height: 300,
-    justifyContent: 'flex-start'
-  },
-  tituloInicial: {
-    fontSize: 30,
-    textAlign: 'center',
-    margin: 10,
-    fontWeight: 'bold'
-  },
-  containerInicial: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginStart: 20
-  },
-  textoContainerInicial: {
-    fontSize: 25
-  },
-  logo: {
-    width: 50,
-    height: 50,
-    marginHorizontal: 10
-  }
-})
