@@ -62,6 +62,27 @@ const estilos = StyleSheet.create({
   },
   textobotao: {
     color: '#fff'
+  },
+  tituloLista: {
+    fontSize: 30,
+    fontWeight: 'bold',
+    margin: 20
+  },
+  containerLista: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderBottomWidth: 1,
+    borderBottomColor: '#ECECEC'
+  },
+  descricaoLista: {
+    fontSize: 20
+  },
+
+  imageLista: {
+    width: 60,
+    height: 60,
+    borderRadius: 10,
+    margin: 20
   }
 })
 export default estilos
