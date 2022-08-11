@@ -46,6 +46,22 @@ const estilos = StyleSheet.create({
     color: '#141',
     fontSize: 30,
     fontWeight: 'bold'
+  },
+  conatinerbotao: {
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  botao: {
+    width: 200,
+    height: 50,
+    backgroundColor: '#141',
+    alignItems: 'center',
+    justifyContent: 'center',
+    margin: 10,
+    borderRadius: 6
+  },
+  textobotao: {
+    color: '#fff'
   }
 })
 export default estilos
