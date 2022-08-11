@@ -27,8 +27,9 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF",
         "package": "com.suaempresa.nomedoaplicativosemtraco",
-      "versionCode": 1
-      }
+        "versionCode": 1
+      },
+      "package": "com.suaempresa.nomedoaplicativosemtraco"
     },
     "web": {
       "favicon": "./assets/favicon.png"
